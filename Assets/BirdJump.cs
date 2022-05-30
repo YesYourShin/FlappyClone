@@ -6,6 +6,7 @@ public class BirdJump : MonoBehaviour
 {
 
     Rigidbody2D rb;
+    public float jumpPower = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class BirdJump : MonoBehaviour
     {
         if(Input.GetMouseButton(0))
         {
-            rb.velocity = Vector2.up * 3; // (0, 1) * 3
+            rb.velocity = Vector2.up * jumpPower; // (0, 1) * 3
         }
     }
 }
