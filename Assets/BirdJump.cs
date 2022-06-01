@@ -20,6 +20,7 @@ public class BirdJump : MonoBehaviour
     {
         if(Input.GetMouseButton(0))
         {
+            GetComponent<AudioSource>().Play();
             rb.velocity = Vector2.up * jumpPower; // (0, 1) * 3
         }
     }
